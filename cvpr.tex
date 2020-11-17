@@ -253,15 +253,8 @@ where $\mathcal{M}$ denote the binary mask indicating the unimportant channels o
 
 
 \textbf{Pruning Strategy for Residual Connections. }\label{Pruning with Residual-Connections} 
-Apart from solving the above two problems, the MaskSparsity method have another advantage over the other sparsity-training-based methods, which is in the case of residual connections \cite{he2016deep}. In the following, we show the pruning strategy of MaskSparsity on the structure with residual connections, and discuss its advantage. 
-
-
-%We use the ResNet \cite{he2016deep} as an example to demonstrate the advantage of MaskSparsity over the other sparsity-training-based methods. 
-
-The residual module of ResNet requires the element-wise add operation. This operation requires the summed feature maps have the same channel count. However, most of the existing pruning methods are not able to control the number of the channels that they push to zero with the sparse regularization. In this scene, they have to only prune the intersection of the unimportant channel indexes of all summed feature maps. Therefore, a number of unpruned channels are still pushed to zero by them. 
-We think this increases the accuracy drop of the network pruning, because usually some of the pushed-to-zero channels still contribute to the final accuracy to some extent. The left part of Figure \ref{Pruningmask-method}(b) illustrates this problem. With MaskSparsity, the unpruned channels of these added feature maps are not sparsely regularized. Therefore, this enlarges the model capacity of the pruned network.
-
-Moreover, in MaskSparsity, we relax the requirement of the strict intersection of the unimportant channels of all summed feature maps. For a channel index in the ResBlock \cite{he2016deep}, if it is regraded unimportant in more than $75\%$ of the summed feature maps, we set it is unimportant and apply sparsity regularization on the channels of this index in all layers of the summed feature maps. The right part of Figure \ref{Pruningmask-method} shows the unpruned channels are not sparsely regularized.
+Many modern networks have the structure of residual-connections \cite{he2016deep}. The residual-connections based module usually adopts the element-wise add operation. This operation requires the summed feature maps have the same channel count. Moreover, when pruning this structure, all the corresponding channels of the inputs of the add operation should be pushed-to-zero together before they can be pruned. In this scene, the pushed-to-zero channels that have non-sparse corresponding channels are also over-regularized by global sparse regularization to some extend. On the contrary, MaskSparsity can better use these channels to maximum the network's accuracy, since it does not apply the sparse regularization on the above mentioned not-to-prune channels. An illustration is shown in Figure \ref{Pruningmask-method}.
+ 
    
 \begin{figure}[h!]
 	\begin{centering}
