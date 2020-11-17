@@ -81,7 +81,9 @@ First line of institution2 address\\
 \begin{abstract}
  
 
-Structural neural network pruning aims to remove the redundant channels in the deep convolutional neural networks (CNNs) by pruning the filters of less importance to the final output accuracy. To reduce the degradation of performance after pruning, many methods utilize sparse regularization loss to produce structured sparsity. In this paper, we analyze these sparsity-training-based methods and find out two problems of these methods. First, the regularization of unpruned channels is unnecessary, which also restricts the network's capacity. Second, the distribution of important filters and unimportant filters are not well distinguishable after sparsity-training. This challenges the selecting of pruning threshold. The consequence is that a part of pruned parameters are still not small enough to reduce the effect of pruning on the network's output. To solve this problem, we propose a novel pruning method with fine-grained sparse regularization, named MaskSparsity.  MaskSparsity imposes the sparse regularization on the specific filters selected by a predefined mask, rather than all the filters of the model. There are many ways to get the mask acquisition. In this paper, we use the pruning mask of the NetSlim method \cite{liu2017learning}. MaskSparsity achieves 58.2\%-FLOPs reduction on ResNet-110 by removing 59.2\% of the parameters, with only a small loss of 0.14\% in top-1 accuracy on CIFAR-10. Moreover, on ILSVRC-2012, MaskSparsity reduces more than 42\% FLOPs on ResNet-101 by removing 59.2\% of the parameters, with only a loss of 1.17\% in the top-1 accuracy.
+Structural neural network pruning aims to remove the redundant channels in the deep convolutional neural networks (CNNs) by pruning the filters of less importance to the final output accuracy. To reduce the degradation of performance after pruning, many methods utilize sparse regularization loss to produce structured sparsity. In this paper, we analyze these sparsity-training-based methods and find out two problems of these methods. First, the regularization of unpruned channels is unnecessary, which also restricts the network's capacity. Second, the distribution of important filters and unimportant filters are not well distinguishable after sparsity-training. This challenges the selecting of pruning threshold. The consequence is that a part of pruned parameters are still not small enough to reduce the effect of pruning on the network's output. To solve this problem, we propose a novel pruning method with fine-grained sparse regularization, named MaskSparsity. MaskSparsity imposes fine-grained sparse regularization on the specific filters selected by a pruning mask, rather than all the filters of the model. Before the fine-grained  sparse regularization of MaskSparity, we run the global sparse regularization to get the pruning mask.
+%we use the pruning mask of the NetSlim method \cite{liu2017learning}. 
+MaskSparsity achieves 63.03\%-FLOPs reduction on ResNet-110 by removing 60.34\% of the parameters, with no top-1 accuracy on CIFAR-10. Moreover, on ILSVRC-2012, MaskSparsity reduces more than 53.76\% FLOPs on ResNet-50 by removing 54.06\% of the parameters, with only a loss of 0.93\% in the top-1 accuracy.
 
 \begin{figure}[h!]
 	\begin{centering}
@@ -389,7 +391,7 @@ Table \ref{exp-table-cifar10-r110} shows the experimental results of another net
 
 %--------------------------------------------------------------------------------------------------------------------------------------------------
 \begin{table}[ht]\small
-	\caption{Evaluation results using ResNet-56 on CIFAR-10.}
+	\small\caption{Evaluation results using ResNet-56 on CIFAR-10.}
 
 	\setlength{\tabcolsep}{0.01em}
 	\begin{center}
@@ -444,7 +446,7 @@ Table \ref{exp-table-cifar10-r110} shows the experimental results of another net
 
 %--------------------------------------------------------------------------------------------------------------------------------------------------
 \begin{table}[ht]
-	\caption{Evaluation results using ResNet-110 on CIFAR-10.}
+	\large\caption{Evaluation results using ResNet-110 on CIFAR-10.}
 	\vspace{-0.4cm}
 	\small
 	\setlength{\tabcolsep}{0.01em}
@@ -494,13 +496,14 @@ Table \ref{exp-table-cifar10-r110} shows the experimental results of another net
 	\caption{Pruning VGG16 on CIFAR-10.}
 	\vspace{+0.2em}
 	%\small
-	\scriptsize
-	\setlength{\tabcolsep}{0.35em}
+	%\scriptsize
+	\footnotesize
+	\setlength{\tabcolsep}{0.1em}
 	\begin{center}
 		\begin{tabular}{cccccc}
 			\hline
 			
-		Method 			&Basetop-1		&\shortstack {Pruned\\before FT} &Fine-tuned	& Top-1 $\downarrow$\% 	&FLOPs$\downarrow$\% \\ 
+		Method 			&Base top-1		&\shortstack {Pruned\\before FT} &FT	& Top-1 $\downarrow$\% 	&FLOPs$\downarrow$\% \\ 
 		\hline
 		
 		PFEC~\cite{li2016pruning} {\scriptsize{( from \cite{FPGM})}}   & 93.58  &77.45 & 93.28 & 0.3  &34.2\\  
