@@ -39,8 +39,6 @@
 \global\long\def\defeq{\stackrel{\mathrm{{\scriptscriptstyle def}}}{=}}
 
 
-
-
 \global\long\def\otilde{\widetilde{O}}
 % If you comment hyperref and then uncomment it, you should delete
 % egpaper.aux before re-running latex.  (Or just hit 'q' on the first latex
@@ -84,6 +82,7 @@ First line of institution2 address\\
 Structural neural network pruning aims to remove the redundant channels in the deep convolutional neural networks (CNNs) by pruning the filters of less importance to the final output accuracy. To reduce the degradation of performance after pruning, many methods utilize sparse regularization loss to produce structured sparsity. In this paper, we analyze these sparsity-training-based methods and find out two problems of these methods. First, the regularization of unpruned channels is unnecessary, which also restricts the network's capacity. Second, the distribution of important filters and unimportant filters are not well distinguishable after sparsity-training. This challenges the selecting of pruning threshold. The consequence is that a part of pruned parameters are still not small enough to reduce the effect of pruning on the network's output. To solve this problem, we propose a novel pruning method with fine-grained sparse regularization, named MaskSparsity. MaskSparsity imposes fine-grained sparse regularization on the specific filters selected by a pruning mask, rather than all the filters of the model. Before the fine-grained  sparse regularization of MaskSparity, we run the global sparse regularization to get the pruning mask.
 %we use the pruning mask of the NetSlim method \cite{liu2017learning}. 
 MaskSparsity achieves 63.03\%-FLOPs reduction on ResNet-110 by removing 60.34\% of the parameters, with no top-1 accuracy on CIFAR-10. Moreover, on ILSVRC-2012, MaskSparsity reduces more than 53.76\% FLOPs on ResNet-50 by removing 54.06\% of the parameters, with only a loss of 0.93\% in the top-1 accuracy.
+
 
 \begin{figure}[h!]
 	\begin{centering}
@@ -255,15 +254,8 @@ where $\mathcal{M}$ denote the binary mask indicating the unimportant channels o
 
 
 \textbf{Pruning Strategy for Residual Connections. }\label{Pruning with Residual-Connections} 
-Apart from solving the above two problems, the MaskSparsity method have another advantage over the other sparsity-training-based methods, which is in the case of residual connections \cite{he2016deep}. In the following, we show the pruning strategy of MaskSparsity on the structure with residual connections, and discuss its advantage. 
-
-
-%We use the ResNet \cite{he2016deep} as an example to demonstrate the advantage of MaskSparsity over the other sparsity-training-based methods. 
-
-The residual module of ResNet requires the element-wise add operation. This operation requires the summed feature maps have the same channel count. However, most of the existing pruning methods are not able to control the number of the channels that they push to zero with the sparse regularization. In this scene, they have to only prune the intersection of the unimportant channel indexes of all summed feature maps. Therefore, a number of unpruned channels are still pushed to zero by them. 
-We think this increases the accuracy drop of the network pruning, because usually some of the pushed-to-zero channels still contribute to the final accuracy to some extent. The left part of Figure \ref{Pruningmask-method}(b) illustrates this problem. With MaskSparsity, the unpruned channels of these added feature maps are not sparsely regularized. Therefore, this enlarges the model capacity of the pruned network.
-
-Moreover, in MaskSparsity, we relax the requirement of the strict intersection of the unimportant channels of all summed feature maps. For a channel index in the ResBlock \cite{he2016deep}, if it is regraded unimportant in more than $75\%$ of the summed feature maps, we set it is unimportant and apply sparsity regularization on the channels of this index in all layers of the summed feature maps. The right part of Figure \ref{Pruningmask-method} shows the unpruned channels are not sparsely regularized.
+Many modern networks have the structure of residual-connections \cite{he2016deep}. The residual-connections based module usually adopts the element-wise add operation. This operation requires the summed feature maps have the same channel count. Moreover, when pruning this structure, all the corresponding channels of the inputs of the add operation should be pushed-to-zero together before they can be pruned. In this scene, the pushed-to-zero channels that have non-sparse corresponding channels are also over-regularized by global sparse regularization to some extend. On the contrary, MaskSparsity can better use these channels to maximum the network's accuracy, since it does not apply the sparse regularization on the above mentioned not-to-prune channels. An illustration is shown in Figure \ref{Pruningmask-method}.
+ 
    
 \begin{figure}[h!]
 	\begin{centering}
@@ -489,11 +481,11 @@ Table \ref{exp-table-cifar10-r110} shows the experimental results of another net
 \end{table}
 %--------------------------------------------------------------------------------------------------------------------------------------------------
  
-
+Table \ref{exp-table-cifar10-VGG16} shows the experimental results of VGG-16, which is a straight network structure that is different from ResNet. We compare MaskSparsity with NetSlim (NS) \cite{liu2017learning}, FPGM \cite{FPGM}, and PFEC \cite{li2016pruning}. It shows that we outperforms NS \cite{liu2017learning} and PFEC \cite{li2016pruning} on both accuracy and FLOPS reduction. Compared with FPGM \cite{FPGM}, we are 0.04 \% less than FPGM on the increase of the accuracy, which is very minor. However, we decrease 18.01\% more FLOPS than FPGM. Therefore, we also outperforms FPGM in general pruning performance. Moreover, we want to 
 
 
 \begin{table}[ht]
-	\caption{Pruning VGG16 on CIFAR-10.}
+	\caption{Evaluation results using VGG-16 on CIFAR-10.}
 	\vspace{+0.2em}
 	%\small
 	%\scriptsize
