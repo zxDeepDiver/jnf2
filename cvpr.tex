@@ -344,18 +344,18 @@ To demonstrate the effectiveness of Mask Sparsity in reducing model complexity, 
 For fair comparison of the model complexity, we use the number of parameters and the FLOPS \cite{he2016deep}. To evaluate the accuracy, to be consistent with other methods, we use top-1 and top-5 score of full-size models and pruned models on ILSVRC-2012 and top-1 score only on CIFAR-10.
 
 \textbf{Training and Pruning setting}.
-On CIFAR-10, the parameter setting is the same as [], and remains unchanged in all steps. On ILSVRC-2012, the parameter setting is the same as [], and remain unchanged in all steps too. 
-
-In the normal-training step, we train the model and get our baseline. For the ResNet-50 base model, our baseline ( $76.45\%$ top-1 accuracy ) is a little higher then previous works( $76.15\%$ top-1 accuracy ), which makes the effectiveness of our method more convincing.
 
 
-In the mask acquisition step, we first perform sparsity training for model with penalty factors $\lambda$ selected empirically. In order to obtain the most perfect pruning mask, we tried many experiments with various penalty factors $\lambda$, and observe the ratio of the channels whose scaling factor is less than $1e^{-2}$ to all channels after several iterations. In the end, we choose $\lambda=2e^{-4}$ for ResNet-56 and $\lambda=5e^{-5}$ for ResNet-110 on CIFAR-10, and we choose $\lambda=2e^{-4}$ for ResNet-50 on ILSVRC-2012. Then we prune the sparse model base on “smaller-norm-less-important” criterion and obtain the sparse mask according to the target pruning rate. 
+On CIFAR-10, we train models for 200 epochs with a batch size of 128, a weight decay of 0.0005, a Nesterov momentum of 0.9 without dampening in every stage, and an initial learning rate of 0.1 which is divided by 5 at epochs 60, 120 and 160 on four NVIDIA GTX 1080Ti GPUs; On ILSVRC-2012, we train models for 100 epochs with a batch size of 256, a weight decay of 0.0001, a Nesterov momentum of 0.9 with dampening in every stage, and an initial learning rate of 0.1 which is divided by 5 at epochs 30, 60 and 90 on eight NVIDIA GTX 1080Ti GPUs.
 
-In the mask sparsity training step, we reinitialize network with pretrained model and perform mask sparsity training for model with pruning mask and a higher $\lambda$. On CIFAR-10, we choose $\lambda=1e^{-3}$ for ResNet-56 and ResNet-110, and we choose $\lambda=5e^{-4}$ for ResNet-50 On ILSVRC-2012. 
+In the mask acquisition step, we first perform sparsity training on resnet56 with penalty factors $\lambda=2e^{-4}$, resnet110 with penalty factors $\lambda=5e^{-5}$ on CIFAR-10, and resnet50 with penalty factors $\lambda=2e^{-4}$ on ILSVRC-2012. Then we prune the sparse model base on the “smaller-norm-less-important” criterion and obtain the sparse mask according to the target pruning rate. 
 
-In the formal pruning stage, we prune the model with a threshold of $1e^{-2}$. The pruning mask and sparse mask almost completely coincide,  which means that we only perform sparse penalty on the pruned channel.
+In the mask sparsity training step, we reinitialize the network with a pretrained model and perform the mask sparsity training for the model with pruning the mask and a higher $\lambda$. On CIFAR-10, we choose $\lambda=1e^{-3}$ for ResNet-56 and ResNet-110, and we choose $\lambda=5e^{-4}$ for ResNet-50 On ILSVRC-2012. 
 
-After pruning, we fine-tune the pruned the pruned model with one thousandth of learning rate in previous step.
+In the formal pruning stage, we prune the model with a threshold of $1e^{-2}$. The pruning mask and sparse mask almost completely coincide,  which means that we only perform a sparse penalty on the pruned channel.
+
+After pruning, we fine-tune the pruned model with an initial learning rate of 0.001, and
+other parameter settings are the same as the previous step.
 
 
 %--------------------------------------------------------------------------------------------------------------------------------------------------
@@ -393,7 +393,7 @@ Table \ref{exp-table-cifar10-r110} shows the experimental results of another net
 
 	\setlength{\tabcolsep}{0.01em}
 	\begin{center}
-		\begin{tabular}{lllll}	
+		\begin{tabular}{ccccc}	
 			\hline
 			
 			Method 							&Base top-1		&Pruned top-1	& Top-1 $\downarrow$\% 	&FLOPs$\downarrow$\%	 			\\
@@ -445,11 +445,11 @@ Table \ref{exp-table-cifar10-r110} shows the experimental results of another net
 %--------------------------------------------------------------------------------------------------------------------------------------------------
 \begin{table}[ht]
 	\caption{Evaluation results using ResNet-110 on CIFAR-10.}
-	
+	\vspace{-0.4cm}
 	\small
 	\setlength{\tabcolsep}{0.01em}
 	\begin{center}
-		\begin{tabular}{lllll}
+		\begin{tabular}{ccccc}
 			\hline
 			
 			Method 							&Base top-1		&Pruned top-1	& Top-1 $\downarrow$\% 	&FLOPs$\downarrow$\%	 			\\
@@ -492,23 +492,25 @@ Table \ref{exp-table-cifar10-r110} shows the experimental results of another net
 
 \begin{table}[ht]
 	\caption{Pruning VGG16 on CIFAR-10.}
-	
-	\small
-	\setlength{\tabcolsep}{0.01em}
+	\vspace{+0.2em}
+	%\small
+	\scriptsize
+	\setlength{\tabcolsep}{0.35em}
 	\begin{center}
-		\begin{tabular}{llllll}
+		\begin{tabular}{cccccc}
 			\hline
 			
-			Method 			&Base top-1		&Pruned top-1	& Top-1 $\downarrow$\% 	&FLOPs$\downarrow$\% \\ 
-			\hline
+		Method 			&Basetop-1		&\shortstack {Pruned\\before FT} &Fine-tuned	& Top-1 $\downarrow$\% 	&FLOPs$\downarrow$\% \\ 
+		\hline
+		
+		PFEC~\cite{li2016pruning} {\scriptsize{( from \cite{FPGM})}}   & 93.58  &77.45 & 93.28 & 0.3  &34.2\\  
+		
+		FPGM \cite{FPGM}   & 93.58  &80.38 & 94.00  &\textbf{-0.42} &34.2\\  
+		
+		NS \cite{liu2017learning} & 93.66 &-  & 93.80  &-0.14 &51\\  
+		
+    	\textbf{MaskSparity(ours)}                &\textbf{93.86}   &\textbf{94.16} &\textbf{94.24} &-0.38 & \textbf{52.21}\\ 
 			
-			PFEC~\cite{li2016pruning}      & 93.25   & 93.40 & -0.15  &34.2\\  
-			
-			FPGM \cite{FPGM}   & 93.58   & 94.00  & {-0.42} &34.2\\  
-			
-			NS \cite{liu2017learning} & 93.66   & 93.80  &-0.14 &51\\  
-			
-			\textbf{MaskSparity(ours)}               &\textbf{93.86}    &\textbf{94.16} &\textbf{-0.3} & \textbf{52.21}\\
 		
 		    
 			\hline
