@@ -1,0 +1,282 @@
+\begin{thebibliography}{10}\itemsep=-1pt
+
+\bibitem{alvarez2016learning}
+Jose~M Alvarez and Mathieu Salzmann.
+\newblock Learning the number of neurons in deep networks.
+\newblock In {\em Advances in Neural Information Processing Systems}, pages
+  2270--2278, 2016.
+
+\bibitem{alvarez2017compression}
+Jose~M Alvarez and Mathieu Salzmann.
+\newblock Compression-aware training of deep networks.
+\newblock In {\em Advances in Neural Information Processing Systems}, pages
+  856--867, 2017.
+
+\bibitem{LeGR}
+Ting-Wu Chin, Ruizhou Ding, C. Zhang, and Diana Marculescu.
+\newblock Towards efficient model compression via learned global ranking.
+\newblock {\em 2020 IEEE/CVF Conference on Computer Vision and Pattern
+  Recognition (CVPR)}, pages 1515--1525, 2020.
+
+\bibitem{Cordts2016Cityscapes}
+Marius Cordts, Mohamed Omran, Sebastian Ramos, Timo Rehfeld, Markus Enzweiler,
+  Rodrigo Benenson, Uwe Franke, Stefan Roth, and Bernt Schiele.
+\newblock The cityscapes dataset for semantic urban scene understanding.
+\newblock In {\em Proc. of the IEEE Conference on Computer Vision and Pattern
+  Recognition (CVPR)}, 2016.
+
+\bibitem{denil2013predicting}
+Misha Denil, Babak Shakibi, Laurent Dinh, Marc'Aurelio Ranzato, and Nando
+  De~Freitas.
+\newblock Predicting parameters in deep learning.
+\newblock In {\em Advances in neural information processing systems}, pages
+  2148--2156, 2013.
+
+\bibitem{denton2014exploiting}
+Emily~L Denton, Wojciech Zaremba, Joan Bruna, Yann LeCun, and Rob Fergus.
+\newblock Exploiting linear structure within convolutional networks for
+  efficient evaluation.
+\newblock In {\em Advances in neural information processing systems}, pages
+  1269--1277, 2014.
+
+\bibitem{CSGD}
+Xiaohan Ding, Guiguang Ding, Yuchen Guo, and Jungong Han.
+\newblock Centripetal {SGD} for pruning very deep convolutional networks with
+  complicated structure.
+\newblock In {\em {IEEE} Conference on Computer Vision and Pattern Recognition,
+  {CVPR} 2019, Long Beach, CA, USA, June 16-20, 2019}, pages 4943--4953.
+  Computer Vision Foundation / {IEEE}, 2019.
+
+\bibitem{GM}
+P.~T. Fletcher, Suresh Venkatasubramanian, and S. Joshi.
+\newblock Robust statistics on riemannian manifolds via the geometric median.
+\newblock {\em 2008 IEEE Conference on Computer Vision and Pattern
+  Recognition}, pages 1--8, 2008.
+
+\bibitem{he2016deep}
+Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun.
+\newblock Deep residual learning for image recognition.
+\newblock In {\em Proceedings of the IEEE conference on computer vision and
+  pattern recognition}, pages 770--778, 2016.
+
+\bibitem{He2016IdentityMI}
+Kaiming He, X. Zhang, Shaoqing Ren, and Jian Sun.
+\newblock Identity mappings in deep residual networks.
+\newblock {\em ArXiv}, abs/1603.05027, 2016.
+
+\bibitem{he2020learning}
+Yang He, Yuhang Ding, Ping Liu, Linchao Zhu, Hanwang Zhang, and Yi Yang.
+\newblock Learning filter pruning criteria for deep convolutional neural
+  networks acceleration.
+\newblock In {\em Proceedings of the IEEE Conference on Computer Vision and
+  Pattern Recognition (CVPR)}, 2020.
+
+\bibitem{he2018soft}
+Yang He, Guoliang Kang, Xuanyi Dong, Yanwei Fu, and Yi Yang.
+\newblock Soft filter pruning for accelerating deep convolutional neural
+  networks.
+\newblock In {\em Proceedings of the Twenty-Seventh International Joint
+  Conference on Artificial Intelligence}, pages 2234--2240, 2018.
+
+\bibitem{he2018amc}
+Yihui He, Ji Lin, Zhijian Liu, Hanrui Wang, Li-Jia Li, and Song Han.
+\newblock Amc: Automl for model compression and acceleration on mobile devices.
+\newblock In {\em European Conference on Computer Vision}, pages 815--832.
+  Springer, 2018.
+
+\bibitem{FPGM}
+Yang He, Ping Liu, Ziwei Wang, Zhilan Hu, and Yi Yang.
+\newblock Filter pruning via geometric median for deep convolutional neural
+  networks acceleration.
+\newblock In {\em {IEEE} Conference on Computer Vision and Pattern Recognition,
+  {CVPR} 2019, Long Beach, CA, USA, June 16-20, 2019}, pages 4340--4349.
+  Computer Vision Foundation / {IEEE}, 2019.
+
+\bibitem{he2017channel}
+Yihui He, Xiangyu Zhang, and Jian Sun.
+\newblock Channel pruning for accelerating very deep neural networks.
+\newblock In {\em International Conference on Computer Vision (ICCV)},
+  volume~2, page~6, 2017.
+
+\bibitem{hinton2015distilling}
+Geoffrey Hinton, Oriol Vinyals, and Jeff Dean.
+\newblock Distilling the knowledge in a neural network.
+\newblock {\em arXiv preprint arXiv:1503.02531}, 2015.
+
+\bibitem{huang2018data}
+Zehao Huang and Naiyan Wang.
+\newblock Data-driven sparse structure selection for deep neural networks.
+\newblock In {\em Proceedings of the European conference on computer vision
+  (ECCV)}, pages 304--320, 2018.
+
+\bibitem{ioffe2015batch}
+Sergey Ioffe and Christian Szegedy.
+\newblock Batch normalization: Accelerating deep network training by reducing
+  internal covariate shift.
+\newblock {\em arXiv preprint arXiv:1502.03167}, 2015.
+
+\bibitem{jacob2018quantization}
+Benoit Jacob, Skirmantas Kligys, Bo Chen, Menglong Zhu, Matthew Tang, Andrew
+  Howard, Hartwig Adam, and Dmitry Kalenichenko.
+\newblock Quantization and training of neural networks for efficient
+  integer-arithmetic-only inference.
+\newblock In {\em Proceedings of the IEEE Conference on Computer Vision and
+  Pattern Recognition}, pages 2704--2713, 2018.
+
+\bibitem{krizhevsky2009learning}
+Alex Krizhevsky and Geoffrey Hinton.
+\newblock Learning multiple layers of features from tiny images.
+\newblock Technical report, 2009.
+
+\bibitem{L1}
+Hao Li, Asim Kadav, Igor Durdanovic, H. Samet, and H. Graf.
+\newblock Pruning filters for efficient convnets.
+\newblock {\em ArXiv}, abs/1608.08710, 2017.
+
+\bibitem{li2016pruning}
+Hao Li, Asim Kadav, Igor Durdanovic, Hanan Samet, and Hans~Peter Graf.
+\newblock Pruning filters for efficient convnets.
+\newblock In {\em 5th International Conference on Learning Representations},
+  2017.
+
+\bibitem{OICSROS}
+Jiashi Li, Q. Qi, J. Wang, Ce Ge, Yujian Li, Zhangzhang Yue, and Haifeng Sun.
+\newblock Oicsr: Out-in-channel sparsity regularization for compact deep neural
+  networks.
+\newblock {\em 2019 IEEE/CVF Conference on Computer Vision and Pattern
+  Recognition (CVPR)}, pages 7039--7048, 2019.
+
+\bibitem{Hinge}
+Yawei Li, Shuhang Gu, C. Mayer, L. Gool, and R. Timofte.
+\newblock Group sparsity: The hinge between filter pruning and decomposition
+  for network compression.
+\newblock {\em 2020 IEEE/CVF Conference on Computer Vision and Pattern
+  Recognition (CVPR)}, pages 8015--8024, 2020.
+
+\bibitem{li2020group}
+Yawei Li, Shuhang Gu, Christoph Mayer, Luc~Van Gool, and Radu Timofte.
+\newblock Group sparsity: The hinge between filter pruning and decomposition
+  for network compression.
+\newblock In {\em Proceedings of the IEEE/CVF Conference on Computer Vision and
+  Pattern Recognition}, pages 8018--8027, 2020.
+
+\bibitem{lin2020hrank}
+Mingbao Lin, Rongrong Ji, Yan Wang, Yichen Zhang, Baochang Zhang, Yonghong
+  Tian, and Ling Shao.
+\newblock Hrank: Filter pruning using high-rank feature map.
+\newblock In {\em Proceedings of the IEEE/CVF Conference on Computer Vision and
+  Pattern Recognition}, pages 1529--1538, 2020.
+
+\bibitem{HRank}
+Mingbao Lin, Rongrong Ji, Yan Wang, Yichen Zhang, Baochang Zhang, Yonghong
+  Tian, and Ling Shao.
+\newblock Hrank: Filter pruning using high-rank feature map.
+\newblock {\em CoRR}, abs/2002.10179, 2020.
+
+\bibitem{GAL}
+Shaohui Lin, Rongrong Ji, Chenqian Yan, Baochang Zhang, Liujuan Cao, Qixiang
+  Ye, Feiyue Huang, and David~S. Doermann.
+\newblock Towards optimal structured {CNN} pruning via generative adversarial
+  learning.
+\newblock In {\em {IEEE} Conference on Computer Vision and Pattern Recognition,
+  {CVPR} 2019, Long Beach, CA, USA, June 16-20, 2019}, pages 2790--2799.
+  Computer Vision Foundation / {IEEE}, 2019.
+
+\bibitem{lin2014microsoft}
+Tsung-Yi {Lin}, Michael {Maire}, Serge~J. {Belongie}, James {Hays}, Pietro
+  {Perona}, Deva {Ramanan}, Piotr {Dollár}, and C.~Lawrence {Zitnick}.
+\newblock Microsoft coco: Common objects in context.
+\newblock In {\em European Conference on Computer Vision}, pages 740--755,
+  2014.
+
+\bibitem{liu2017learning}
+Zhuang Liu, Jianguo Li, Zhiqiang Shen, Gao Huang, Shoumeng Yan, and Changshui
+  Zhang.
+\newblock Learning efficient convolutional networks through network slimming.
+\newblock In {\em Proceedings of the IEEE International Conference on Computer
+  Vision}, pages 2736--2744, 2017.
+
+\bibitem{Metapruning}
+Zechun Liu, Haoyuan Mu, Xiangyu Zhang, Zichao Guo, Xin Yang, Kwang{-}Ting
+  Cheng, and Jian Sun.
+\newblock Metapruning: Meta learning for automatic neural network channel
+  pruning.
+\newblock In {\em 2019 {IEEE/CVF} International Conference on Computer Vision,
+  {ICCV} 2019, Seoul, Korea (South), October 27 - November 2, 2019}, pages
+  3295--3304. {IEEE}, 2019.
+
+\bibitem{DBLP:journals/pami/LuoZZXWL19}
+Jian{-}Hao Luo, Hao Zhang, Hong{-}Yu Zhou, Chen{-}Wei Xie, Jianxin Wu, and
+  Weiyao Lin.
+\newblock Thinet: Pruning {CNN} filters for a thinner net.
+\newblock {\em {IEEE} Trans. Pattern Anal. Mach. Intell.}, 41(10):2525--2538,
+  2019.
+
+\bibitem{luo2018autopruner}
+Jian-Hao Luo and Jianxin Wu.
+\newblock Autopruner: An end-to-end trainable filter pruning method for
+  efficient deep model inference.
+\newblock {\em arXiv preprint arXiv:1805.08941}, 2018.
+
+\bibitem{russakovsky2015imagenet}
+Olga {Russakovsky}, Jia {Deng}, Hao {Su}, Jonathan {Krause}, Sanjeev
+  {Satheesh}, Sean {Ma}, Zhiheng {Huang}, Andrej {Karpathy}, Aditya {Khosla},
+  Michael {Bernstein}, Alexander~C. {Berg}, and Li {Fei-Fei}.
+\newblock Imagenet large scale visual recognition challenge.
+\newblock {\em International Journal of Computer Vision}, 115(3):211--252,
+  2015.
+
+\bibitem{SASL}
+Jun Shi, Jianfeng Xu, Kazuyuki Tasaka, and Zhibo Chen.
+\newblock {SASL:} saliency-adaptive sparsity learning for neural network
+  acceleration.
+\newblock {\em CoRR}, abs/2003.05891, 2020.
+
+\bibitem{Srinivas2017TrainingSN}
+Suraj Srinivas, Akshayvarun Subramanya, and R.~Venkatesh Babu.
+\newblock Training sparse neural networks.
+\newblock {\em 2017 IEEE Conference on Computer Vision and Pattern Recognition
+  Workshops (CVPRW)}, pages 455--462, 2017.
+
+\bibitem{wen2016learning}
+Wei Wen, Chunpeng Wu, Yandan Wang, Yiran Chen, and Hai Li.
+\newblock Learning structured sparsity in deep neural networks.
+\newblock In {\em Advances in neural information processing systems}, pages
+  2074--2082, 2016.
+
+\bibitem{xu2018hybrid}
+Xiaofan Xu, Mi~Sun Park, and Cormac Brick.
+\newblock Hybrid pruning: Thinner sparse networks for fast inference on edge
+  devices.
+\newblock {\em arXiv preprint arXiv:1811.00482}, 2018.
+
+\bibitem{OT}
+Yun Ye, Ganmei You, J. Fwu, Xia Zhu, Q. Yang, and Y. Zhu.
+\newblock Channel pruning via optimal thresholding.
+\newblock {\em ArXiv}, abs/2003.04566, 2020.
+
+\bibitem{ye2020channel}
+Yun Ye, Ganmei You, Jong-Kae Fwu, Xia Zhu, Qing Yang, and Yuan Zhu.
+\newblock Channel pruning via optimal thresholding.
+\newblock {\em arXiv preprint arXiv:2003.04566}, 2020.
+
+\bibitem{yu2018nisp}
+Ruichi Yu, Ang Li, Chun-Fu Chen, Jui-Hsin Lai, Vlad~I Morariu, Xintong Han,
+  Mingfei Gao, Ching-Yung Lin, and Larry~S Davis.
+\newblock Nisp: Pruning networks using neuron importance score propagation.
+\newblock In {\em Proceedings of the IEEE Conference on Computer Vision and
+  Pattern Recognition}, pages 9194--9203, 2018.
+
+\bibitem{Dependency}
+Kai Zhao, Xinyu Zhang, Q. Han, and Ming-Ming Cheng.
+\newblock Dependency aware filter pruning.
+\newblock {\em ArXiv}, abs/2005.02634, 2020.
+
+\bibitem{zhuang2018discrimination}
+Zhuangwei Zhuang, Mingkui Tan, Bohan Zhuang, Jing Liu, Yong Guo, Qingyao Wu,
+  Junzhou Huang, and Jinhui Zhu.
+\newblock Discrimination-aware channel pruning for deep neural networks.
+\newblock In {\em Advances in Neural Information Processing Systems}, pages
+  883--894, 2018.
+
+\end{thebibliography}
