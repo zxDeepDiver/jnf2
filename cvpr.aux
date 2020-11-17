@@ -14,7 +14,6 @@
 \global\let\hyper@last\relax 
 \gdef\HyperFirstAtBeginDocument#1{#1}
 \providecommand\HyField@AuxAddToFields[1]{}
-\citation{liu2017learning}
 \citation{russakovsky2015imagenet}
 \citation{lin2014microsoft}
 \citation{Cordts2016Cityscapes}
@@ -24,7 +23,6 @@
 \citation{jacob2018quantization}
 \citation{hinton2015distilling}
 \citation{denton2014exploiting}
-\@writefile{brf}{\backcite{liu2017learning}{{1}{(document)}{Doc-Start}}}
 \@writefile{toc}{\contentsline {section}{\numberline {1}\hskip -1em.\nobreakspace  {}Introduction}{1}{section.1}}
 \newlabel{introduction}{{1}{1}{\hskip -1em.~Introduction\relax }{section.1}{}}
 \@writefile{brf}{\backcite{russakovsky2015imagenet}{{1}{1}{figure.2}}}
@@ -163,9 +161,12 @@
 \citation{HRank}
 \citation{CSGD}
 \citation{SASL}
+\citation{liu2017learning}
+\citation{FPGM}
+\citation{li2016pruning}
+\citation{liu2017learning}
 \citation{li2016pruning}
 \citation{FPGM}
-\citation{liu2017learning}
 \@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Evaluation results using ResNet-50 on ILSVRC-2012.}}{6}{table.1}}
 \@writefile{brf}{\backcite{liu2017learning}{{6}{1}{table.1}}}
 \@writefile{brf}{\backcite{OT}{{6}{1}{table.1}}}
@@ -198,6 +199,10 @@
 \@writefile{brf}{\backcite{HRank}{{6}{4.2.2}{subsubsection.4.2.2}}}
 \@writefile{brf}{\backcite{FPGM}{{6}{4.2.2}{subsubsection.4.2.2}}}
 \@writefile{brf}{\backcite{CSGD}{{6}{4.2.2}{subsubsection.4.2.2}}}
+\citation{li2016pruning}
+\citation{FPGM}
+\citation{FPGM}
+\citation{liu2017learning}
 \@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Evaluation results using ResNet-56 on CIFAR-10.}}{7}{table.2}}
 \@writefile{brf}{\backcite{yu2018nisp}{{7}{2}{table.2}}}
 \@writefile{brf}{\backcite{Hinge}{{7}{2}{table.2}}}
@@ -222,28 +227,35 @@
 \@writefile{brf}{\backcite{CSGD}{{7}{3}{table.3}}}
 \@writefile{brf}{\backcite{SASL}{{7}{3}{table.3}}}
 \newlabel{exp-table-cifar10-r110}{{3}{7}{Evaluation results using ResNet-110 on CIFAR-10}{table.3}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Pruning VGG16 on CIFAR-10.}}{7}{table.4}}
+\@writefile{brf}{\backcite{liu2017learning}{{7}{4.2.2}{table.3}}}
+\@writefile{brf}{\backcite{FPGM}{{7}{4.2.2}{table.3}}}
+\@writefile{brf}{\backcite{li2016pruning}{{7}{4.2.2}{table.3}}}
+\@writefile{brf}{\backcite{liu2017learning}{{7}{4.2.2}{table.3}}}
+\@writefile{brf}{\backcite{li2016pruning}{{7}{4.2.2}{table.3}}}
+\@writefile{brf}{\backcite{FPGM}{{7}{4.2.2}{table.3}}}
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Evaluation results using VGG-16 on CIFAR-10.}}{7}{table.4}}
 \@writefile{brf}{\backcite{li2016pruning}{{7}{4}{table.4}}}
 \@writefile{brf}{\backcite{FPGM}{{7}{4}{table.4}}}
+\@writefile{brf}{\backcite{FPGM}{{7}{4}{table.4}}}
 \@writefile{brf}{\backcite{liu2017learning}{{7}{4}{table.4}}}
-\newlabel{exp-table-cifar10-VGG16}{{4}{7}{Pruning VGG16 on CIFAR-10}{table.4}{}}
+\newlabel{exp-table-cifar10-VGG16}{{4}{7}{Evaluation results using VGG-16 on CIFAR-10}{table.4}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.3}\hskip -1em.\nobreakspace  {}Ablation Study}{7}{subsection.4.3}}
 \newlabel{abalation}{{4.3}{7}{\hskip -1em.~Ablation Study\relax }{subsection.4.3}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {5}\hskip -1em.\nobreakspace  {}Conclusion}{7}{section.5}}
-\newlabel{Conclusion}{{5}{7}{\hskip -1em.~Conclusion\relax }{section.5}{}}
-\bibstyle{ieee_fullname}
-\bibdata{egbib}
-\bibcite{alvarez2016learning}{1}
 \@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Distribution of scaling factors of ResNet50 on ILSVRC-2012 before and after the MaskSparsity's sparsity training.}}{8}{figure.5}}
 \newlabel{dstbtion-mask-sp}{{5}{8}{Distribution of scaling factors of ResNet50 on ILSVRC-2012 before and after the MaskSparsity's sparsity training}{figure.5}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces The gradients of the scaling factors of a certain channel over the additional 1, 000 sparsity-training iterations after the ending of the sparsity training stage. The spare regularization keep the same as that used in the original sparsity training. We choose an important channel and an unimportant channel to conduct this experiment. (a) The important channel, global sparse regularization. (b) The unimportant channel, global sparse regularization. (c) The important channel, fine-grained sparse regularization of MaskSparsity. (d) The unimportant channel, fine-grained sparse regularization of MaskSparsity.}}{8}{figure.6}}
 \newlabel{grad}{{6}{8}{The gradients of the scaling factors of a certain channel over the additional 1, 000 sparsity-training iterations after the ending of the sparsity training stage. The spare regularization keep the same as that used in the original sparsity training. We choose an important channel and an unimportant channel to conduct this experiment. (a) The important channel, global sparse regularization. (b) The unimportant channel, global sparse regularization. (c) The important channel, fine-grained sparse regularization of MaskSparsity. (d) The unimportant channel, fine-grained sparse regularization of MaskSparsity}{figure.6}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}\hskip -1em.\nobreakspace  {}Conclusion}{8}{section.5}}
+\newlabel{Conclusion}{{5}{8}{\hskip -1em.~Conclusion\relax }{section.5}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces  The unimportant-channel masks in every last layers of ResBlocks in the third and forth network stage. The data were obtained from ResNet50 trained with traditional sparsity-training-based methods and MaskSparsity on ILSVRC-2012. }}{8}{figure.7}}
 \newlabel{Pruning-mask-exp}{{7}{8}{The unimportant-channel masks in every last layers of ResBlocks in the third and forth network stage. The data were obtained from ResNet50 trained with traditional sparsity-training-based methods and MaskSparsity on ILSVRC-2012}{figure.7}{}}
 \@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces The stage-wise performance in the case of pruning ResNet-56 on CIFAR-10.}}{8}{table.5}}
 \newlabel{Finetune_scratch_cifar10}{{5}{8}{The stage-wise performance in the case of pruning ResNet-56 on CIFAR-10}{table.5}{}}
 \@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces Pruning ResNet56 on CIFAR-10.}}{8}{table.6}}
 \newlabel{pruning_threshold}{{6}{8}{Pruning ResNet56 on CIFAR-10}{table.6}{}}
+\bibstyle{ieee_fullname}
+\bibdata{egbib}
+\bibcite{alvarez2016learning}{1}
 \bibcite{alvarez2017compression}{2}
 \bibcite{LeGR}{3}
 \bibcite{Cordts2016Cityscapes}{4}

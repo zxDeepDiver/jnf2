@@ -1,4 +1,3 @@
-\backcite {liu2017learning}{{1}{(document)}{Doc-Start}}
 \backcite {russakovsky2015imagenet}{{1}{1}{figure.2}}
 \backcite {lin2014microsoft}{{1}{1}{figure.2}}
 \backcite {Cordts2016Cityscapes}{{1}{1}{figure.2}}
@@ -79,6 +78,13 @@
 \backcite {HRank}{{7}{3}{table.3}}
 \backcite {CSGD}{{7}{3}{table.3}}
 \backcite {SASL}{{7}{3}{table.3}}
+\backcite {liu2017learning}{{7}{4.2.2}{table.3}}
+\backcite {FPGM}{{7}{4.2.2}{table.3}}
+\backcite {li2016pruning}{{7}{4.2.2}{table.3}}
+\backcite {liu2017learning}{{7}{4.2.2}{table.3}}
+\backcite {li2016pruning}{{7}{4.2.2}{table.3}}
+\backcite {FPGM}{{7}{4.2.2}{table.3}}
 \backcite {li2016pruning}{{7}{4}{table.4}}
+\backcite {FPGM}{{7}{4}{table.4}}
 \backcite {FPGM}{{7}{4}{table.4}}
 \backcite {liu2017learning}{{7}{4}{table.4}}
