@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2020.11.15)  17 NOV 2020 12:58
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2020.11.15)  17 NOV 2020 13:01
 entering extended mode
 **cvpr.tex
 (E:\jnf\jnf2021\cvpr.tex
@@ -504,23 +504,204 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 56.
 LaTeX Info: Redefining \pageref on input line 56.
 LaTeX Info: Redefining \nameref on input line 56.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 78.
+LaTeX Font Info:    Try loading font information for U+msa on input line 78.
 
-! I can't write on file `cvpr.pdf'.
-Please type another file name for output
-! Emergency stop.
-<to be read again> 
-                   \edef 
-l.56 \begin{document}
-                     
-*** (job aborted, file error in nonstop mode)
+(E:\CTEX\MiKTeX\tex\latex\amsfonts\umsa.fd
+File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 78.
 
- 
+(E:\CTEX\MiKTeX\tex\latex\amsfonts\umsb.fd
+File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 81.
+
+
+pdfTeX warning: pdflatex.exe (file E:/jnf/jnf2021/figure/Masksparsity_v1.pdf): 
+PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<figure/Masksparsity_v1.pdf, id=4, 1327.20844pt x 1148.79187pt>
+File: figure/Masksparsity_v1.pdf Graphic file (type pdf)
+
+<use figure/Masksparsity_v1.pdf>
+Package pdftex.def Info: figure/Masksparsity_v1.pdf used on input line 88.
+(pdftex.def)             Requested size: 225.27841pt x 194.99403pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 104.
+
+
+
+pdfTeX warning: pdflatex.exe (file E:/jnf/jnf2021/figure/MaskSparsity.pdf): PDF
+ inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<figure/MaskSparsity.pdf, id=5, 857.45343pt x 233.37187pt>
+File: figure/MaskSparsity.pdf Graphic file (type pdf)
+
+<use figure/MaskSparsity.pdf>
+Package pdftex.def Info: figure/MaskSparsity.pdf used on input line 106.
+(pdftex.def)             Requested size: 472.01192pt x 128.46887pt.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 117.
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 117.
+
+ (E:\CTEX\MiKTeX\tex\latex\psnfss\ot1phv.fd
+File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
+)
+[1{E:/CTEX/UserData/pdftex/config/pdftex.map{Unicode.sfd}{UGBK.sfd}}
+
+
+ <E:/jnf/jnf2021/figure/Masksparsity_v1.pdf>] [2 <E:/jnf/jnf2021/figure/MaskSpa
+rsity.pdf>] [3] <figure/problem_cropped.pdf, id=136, 411.5375pt x 317.185pt>
+File: figure/problem_cropped.pdf Graphic file (type pdf)
+
+<use figure/problem_cropped.pdf>
+Package pdftex.def Info: figure/problem_cropped.pdf used on input line 186.
+(pdftex.def)             Requested size: 248.42812pt x 191.46918pt.
+
+Overfull \hbox (11.29218pt too wide) in paragraph at lines 186--187
+ [][] 
+ []
+
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
+put line 202.
+[4 <E:/jnf/jnf2021/figure/problem_cropped.pdf>]
+LaTeX Font Info:    Try loading font information for U+bbm on input line 233.
+
+(E:\CTEX\MiKTeX\tex\latex\bbm\ubbm.fd
+File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
+)
+
+pdfTeX warning: pdflatex.exe (file E:/jnf/jnf2021/figure/resduial_prune.pdf): P
+DF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<figure/resduial_prune.pdf, id=492, 561.59813pt x 595.47469pt>
+File: figure/resduial_prune.pdf Graphic file (type pdf)
+
+<use figure/resduial_prune.pdf>
+Package pdftex.def Info: figure/resduial_prune.pdf used on input line 261.
+(pdftex.def)             Requested size: 248.42812pt x 263.40894pt.
+
+Overfull \hbox (11.29218pt too wide) in paragraph at lines 261--269
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 310.
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ú in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ù in font ptmr7t!
+[5 <E:/jnf/jnf2021/figure/resduial_prune.pdf>]
+Overfull \hbox (1.2786pt too wide) in paragraph at lines 389--433
+ [] 
+ []
+
+
+Overfull \hbox (1.2786pt too wide) in paragraph at lines 445--478
+ [] 
+ []
+
+[6] <figure/solve_pbm_cropped.pdf, id=630, 408.52625pt x 321.2pt>
+File: figure/solve_pbm_cropped.pdf Graphic file (type pdf)
+
+<use figure/solve_pbm_cropped.pdf>
+Package pdftex.def Info: figure/solve_pbm_cropped.pdf used on input line 540.
+(pdftex.def)             Requested size: 248.42812pt x 195.32887pt.
+
+Overfull \hbox (11.29218pt too wide) in paragraph at lines 540--541
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<figure/grad2_cropped.pdf, id=631, 1333.98375pt x 1014.79124pt>
+File: figure/grad2_cropped.pdf Graphic file (type pdf)
+
+<use figure/grad2_cropped.pdf>
+Package pdftex.def Info: figure/grad2_cropped.pdf used on input line 548.
+(pdftex.def)             Requested size: 248.42812pt x 188.9722pt.
+
+Overfull \hbox (11.29218pt too wide) in paragraph at lines 548--549
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+
+pdfTeX warning: pdflatex.exe (file E:/jnf/jnf2021/figure/stage_mask_ablationstu
+dy.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allo
+wed
+<figure/stage_mask_ablationstudy.pdf, id=632, 240.9pt x 192.72pt>
+File: figure/stage_mask_ablationstudy.pdf Graphic file (type pdf)
+
+<use figure/stage_mask_ablationstudy.pdf>
+Package pdftex.def Info: figure/stage_mask_ablationstudy.pdf used on input line
+ 557.
+(pdftex.def)             Requested size: 248.42812pt x 198.74788pt.
+
+Overfull \hbox (11.29218pt too wide) in paragraph at lines 557--559
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[7] (E:\jnf\jnf2021\cvpr.bbl (E:\jnf\jnf2021\cvpr.brf)
+\tf@brf=\write3
+ [8 <E:/jnf/jnf2021/figure/solve_pbm_cropped.pdf> <E:/jnf/jnf2021/figure/grad2_
+cropped.pdf> <E:/jnf/jnf2021/figure/stage_mask_ablationstudy.pdf>] [9]
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no ° in font ptmr7t!
+)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 650.
+ [10]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 650.
+ (E:\jnf\jnf2021\cvpr.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 650.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 650.
+Package rerunfilecheck Info: File `cvpr.brf' has not changed.
+(rerunfilecheck)             Checksum: F5D77D9A20BEC4AF52364ACA9FA213C1;3972.
+ ) 
 Here is how much of TeX's memory you used:
- 7742 strings out of 495354
- 106424 string characters out of 3183858
- 197194 words of memory out of 3000000
- 10814 multiletter control sequences out of 15000+200000
- 6035 words of font info for 19 fonts, out of 3000000 for 9000
+ 8218 strings out of 495354
+ 113876 string characters out of 3183858
+ 238929 words of memory out of 3000000
+ 11122 multiletter control sequences out of 15000+200000
+ 40159 words of font info for 90 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 34i,1n,24p,770b,79s stack positions out of 5000i,500n,10000p,200000b,50000s
-!  ==> Fatal error occurred, no output PDF file produced!
+ 35i,11n,27p,1685b,473s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <E:\CTEX\UserData\fonts\pk\ljfour\public\bbm\dpi600\bbm10.pk>{E:/CTEX/MiKTeX
+/fonts/enc/dvips/fontname/8r.enc}<E:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm
+/cmbx10.pfb><E:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><E:/CTEX/
+MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><E:/CTEX/MiKTeX/fonts/type1/pub
+lic/amsfonts/cm/cmmi7.pfb><E:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.
+pfb><E:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><E:/CTEX/MiKTeX/fo
+nts/type1/public/amsfonts/cm/cmr6.pfb><E:/CTEX/MiKTeX/fonts/type1/public/amsfon
+ts/cm/cmr7.pfb><E:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><E:/CTEX
+/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><E:/CTEX/MiKTeX/fonts/type1/p
+ublic/amsfonts/cm/cmsy5.pfb><E:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy
+6.pfb><E:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><E:/CTEX/MiKTeX/
+fonts/type1/public/amsfonts/cm/cmsy9.pfb><E:/CTEX/MiKTeX/fonts/type1/public/ams
+fonts/symbols/msbm10.pfb><E:/CTEX/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><E
+:/CTEX/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><E:/CTEX/MiKTeX/fonts/type1/u
+rw/times/utmb8a.pfb><E:/CTEX/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><E:/CTEX/M
+iKTeX/fonts/type1/urw/times/utmri8a.pfb>
+Output written on cvpr.pdf (10 pages, 642047 bytes).
+PDF statistics:
+ 1180 PDF objects out of 1200 (max. 8388607)
+ 88 named destinations out of 1000 (max. 500000)
+ 36 words of extra memory for PDF output out of 10000 (max. 10000000)
+
